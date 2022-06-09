@@ -1,0 +1,5 @@
+word, sim = input().split(), input().split()
+d = dict(zip(sim, word))
+d1 = list(filter(lambda i: float(i) > 0.5, d.keys()))
+d1.sort(reverse=True)
+list(map(lambda x: print(d[x]), d1))
